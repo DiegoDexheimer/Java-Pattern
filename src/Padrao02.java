@@ -41,7 +41,7 @@ class EstadoLiquido implements Estado {
     @Override
     public void esquenta(Material material) {
         System.out.println("Aquecendo... O Material está evaporando e se tornando gasoso.");
-        material.setState(new GaseousState());
+        material.setState(new EstadoGasoso());
     }
 
     @Override
@@ -51,7 +51,7 @@ class EstadoLiquido implements Estado {
     }
 }
 
-class GaseousState implements Estado {
+class EstadoGasoso implements Estado {
     @Override
     public void esquenta(Material material) {
         System.out.println("O Material já está no estado gasoso. Não pode ser aquecido mais.");

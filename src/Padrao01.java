@@ -65,9 +65,8 @@ public class Padrao01 {
 
         editorTexto.definirTexto("Texto Versão 4");
 
-        // Restaurando estados anteriores
-        editorTexto.restaurarEstado(gerenciadorEstados.obterEstadoAnterior()); // Texto Versão 3
-        editorTexto.restaurarEstado(gerenciadorEstados.obterEstadoAnterior()); // Texto Versão 2
-        editorTexto.restaurarEstado(gerenciadorEstados.obterEstadoAnterior()); // Texto Versão 1
+        editorTexto.restaurarEstado(gerenciadorEstados.obterEstadoAnterior());
+        editorTexto.restaurarEstado(gerenciadorEstados.obterEstadoAnterior());
+        editorTexto.restaurarEstado(gerenciadorEstados.obterEstadoAnterior());
     }
 }
